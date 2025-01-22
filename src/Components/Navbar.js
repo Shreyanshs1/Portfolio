@@ -1,15 +1,16 @@
 import React from 'react'
+import '../StyleSheets/Navbar.css'
 
 function Navbar() {
   return (
     <>
     <div className='Navbar'>
-    <div>{'<Shreyansh/>'}</div>
-    <div>
+    <div className='logo'>{'<Shreyansh/>'}</div>
+    <div className='links'>
         <a>home</a>
         <a>about</a>
-        <a>Skills</a>
-        <a>Portfolio</a>
+        <a>skills</a>
+        <a>portfolio</a>
         <a>contact</a>
     </div>
     </div>

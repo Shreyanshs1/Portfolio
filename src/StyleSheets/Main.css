@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap');
+
+:root {
+    --primary: #a1d1b1;
+    --secondary: #1c2529;
+    --text:#000;
+    --bg:#eeeeee;
+  }
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Quicksand", serif;
+}
+
+@media (min-width: 1000px) {
+  body{
+      width: 1000px;
+      margin: auto;
+  }
+}
