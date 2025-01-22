@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg);
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 

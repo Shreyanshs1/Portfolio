@@ -4,10 +4,12 @@ import image from'../assets/avatar.png'
 import github from '../assets/Logos/github.svg'
 import instagram from '../assets/Logos/instagram.svg'
 import twitter from '../assets/Logos/twitter.svg'
+import line from '../assets/Line-Design.svg'
 
 function Hero() {
   return (
     <>
+    <div className='container'>
     <div className='main'>
       <div className='left'>
         <p className='heading'>Shreyansh Srivastava👋</p>
@@ -21,6 +23,10 @@ function Hero() {
       </div>
       <div className='right'>
         <img className='avatar-img' src={image} alt='image here'/>
+      </div>
+    </div>
+      <div className='line-design'>
+        <img src={line}/>
       </div>
     </div>
     </>
