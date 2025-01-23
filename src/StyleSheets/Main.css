@@ -19,7 +19,7 @@ body{
 
 @media (min-width: 1000px) {
   body{
-      width: 1000px;
+      max-width: 1000px;
       margin: auto;
   }
 }
