@@ -1,0 +1,15 @@
+.main-skills{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 40px 12px;
+}
+
+@media (max-width: 620px) {
+    .main-skills{
+        
+    grid-template-columns: repeat(1, 1fr);
+    }
+}

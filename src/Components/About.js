@@ -7,6 +7,7 @@ import Experience from '../assets/Logos/experience.svg'
 import Github from '../assets/Logos/github.svg'
 import Resume from '../assets/resume.docx'
 import File from '../assets/Logos/file.svg'
+import line from '../assets/Line-Design.svg'
 
 function About() {
   return (
@@ -22,7 +23,7 @@ function About() {
           <div className='about-cards'>
             <AboutCard logo={Experience} heading="Experience" details="Fresher"/>
             <AboutCard logo={Work} heading="Completed" details="8+ Projects"/>
-            <AboutCard logo={Github} heading="Projects" details="9 Repos"/>
+            <AboutCard logo={Github} heading="Github" details="9 Repos"/>
           </div>
           <div className='my-intro-about'>
             <p className='my-intro-about-para'>Software Developer with knowledge of C++, Java and web development technologies (HTML, CSS, Javascript, React, Node.Js, Express.Js). Eager to learn and contribute to innovative projects.</p>
@@ -32,6 +33,9 @@ function About() {
               <img src={File} className='dwnld-file-logo'/>
             </a>
         </div>
+      </div>
+      <div className='line-design'>
+        <img src={line}/>
       </div>
     </div>
     </>

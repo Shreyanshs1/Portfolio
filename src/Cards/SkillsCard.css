@@ -1,0 +1,38 @@
+.skillscard-box{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.skills-heading{
+    margin: 20px 0 0 0;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.ul-skills{
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.skills-list-card{
+    display: flex;
+    align-items: center;
+}
+
+.verified-logo{
+    height: 20px;
+}
+
+.technologies{
+    margin: 12px;
+}
+
+@media (max-width: 720px) {
+    
+}
