@@ -6,6 +6,7 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Qualification from './Qualification'
 import '../StyleSheets/Main.css'
+import Contact from './Contact'
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
     <Skills/>
     <Projects/>
     <Qualification/>
+    <Contact/>
     </>
   )
 }

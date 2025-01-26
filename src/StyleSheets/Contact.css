@@ -1,0 +1,77 @@
+.contact-form{
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.lbl-nd-inpt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 6px 0;
+}
+
+.lbl-nd-txt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.lbl-nd-inpt label{
+    position: relative;
+    top: -30px;
+    left: 12px;
+    width: fit-content;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.lbl-nd-inpt input, textarea{
+    padding: 10px 12px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Quicksand", serif;
+    font-size: 15px;
+    background-color: rgb(245, 245, 245);
+}
+
+.lbl-nd-inpt input:focus, textarea:focus{
+    outline: none;
+}
+
+
+.lbl-nd-inpt input:focus~label{
+    top: -65px;
+}
+
+.button {
+    background-color: var(--primary); /* Green */
+    border: none;
+    color: var(--secondary);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 14px 2px;
+    cursor: pointer;
+    box-shadow: 0 4px #999;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Depressed button style */
+  .button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
+  
