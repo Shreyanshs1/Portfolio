@@ -15,12 +15,19 @@
 
 
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
     .Navbar{
         flex-direction: column;
     }
     .links{
         border-top:2px solid black;
+    }
+    
+  }
+
+  @media (max-width: 620px){
+    .small-scr-hdn{
+        display: none;
     }
   }
 
@@ -34,6 +41,8 @@
 .links{
     margin: 0px 15px;
     font-size: 18px;
+    width: 100%;
+    text-align: center;
 }
 
 a{
