@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap');
 
 :root {
     --primary: #990302;

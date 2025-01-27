@@ -7,6 +7,7 @@ import Projects from './Projects'
 import Qualification from './Qualification'
 import '../StyleSheets/Main.css'
 import Contact from './Contact'
+import Footer from './Footer'
 
 function Main() {
   return (
@@ -18,6 +19,7 @@ function Main() {
     <Projects/>
     <Qualification/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

@@ -1,0 +1,13 @@
+.container-footer{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-top: 1px solid rgb(176, 176, 176);
+    padding: 50px 0 10px 0;
+}
+
+.footer-heading{
+    font-family: "Gotu", serif;
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+}

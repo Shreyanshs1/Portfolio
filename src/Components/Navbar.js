@@ -4,7 +4,7 @@ import '../StyleSheets/Navbar.css'
 function Navbar() {
   return (
     <>
-    <div className='Navbar'>
+    <div className='Navbar' id='sticky'>
     <div className='logo'>{'<Shreyansh/>'}</div>
     <div className='links'>
         <a>home</a>
