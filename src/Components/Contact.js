@@ -5,7 +5,7 @@ import line from '../assets/Line-Design.svg'
 function Contact() {
   return (
     <>
-    <div className='container-contact block'>
+    <div className='container-contact block' id='contact'>
         <h1 className='about-page-heading'>Contact Me</h1>
         <p className='about-page-subheading'>Write me here</p>
         <div className='main-contact'>

@@ -7,11 +7,12 @@ function Navbar() {
     <div className='Navbar' id='sticky'>
     <div className='logo'>{'<Shreyansh/>'}</div>
     <div className='links'>
-        <a>home</a>
-        <a>about</a>
-        <a>skills</a>
-        <a>portfolio</a>
-        <a>contact</a>
+        <a className='nav-link' href='#home'>home</a>
+        <a className='nav-link' href='#about'>about</a>
+        <a className='nav-link' href='#skills'>skills</a>
+        <a className='nav-link' href='#projects'>projects</a>
+        <a className='nav-link' href='#qualification'>qualification</a>
+        <a className='nav-link' href='#contact'>contact</a>
     </div>
     </div>
     </>

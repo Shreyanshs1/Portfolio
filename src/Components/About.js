@@ -12,7 +12,7 @@ import line from '../assets/Line-Design.svg'
 function About() {
   return (
     <>
-    <div className='container-about'>
+    <div className='container-about' id='about'>
         <h1 className='about-page-heading'>About Me</h1>
         <p className='about-page-subheading'>My Introduction</p>
         <div className='main-about'>

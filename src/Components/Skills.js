@@ -11,7 +11,7 @@ function Skills() {
 
   return (
     <>
-    <div className='container-skills'>
+    <div className='container-skills' id='skills'>
     <h1 className='about-page-heading'>Skills</h1>
     <p className='about-page-subheading'>My Skills</p>
       <div className='main-skills'>

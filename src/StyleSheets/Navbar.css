@@ -39,3 +39,13 @@
 a{
     margin: 0 15px;
 }
+
+
+.nav-link{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.nav-link:hover{
+    color: red;
+}

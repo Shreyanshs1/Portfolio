@@ -9,7 +9,7 @@ import line from '../assets/Line-Design.svg'
 function Hero() {
   return (
     <>
-    <div className='container'>
+    <div className='container' id='home'>
     <div className='main'>
       <div className='left'>
         <p className='heading'>Shreyansh Srivastava👋</p>

@@ -31,7 +31,7 @@ const qualificationObject = [
 ]
   return (
     <>
-    <div className='container-qualification'>
+    <div className='container-qualification' id='qualification'>
     <h1 className='about-page-heading'>Qualification</h1>
     <p className='about-page-subheading'>My Qualifications</p>
     <div className='timeline'>
