@@ -6,7 +6,8 @@ import Dictionary from '../assets/Screenshot/dictionary.jpg'
 import Currency from '../assets/Screenshot/currency.jpeg'
 import Weather from '../assets/Screenshot/weather.jpeg'
 import Calculator from '../assets/Screenshot/reactCalc.jpeg'
-
+import Expense from '../assets/Screenshot/expense.jpeg'
+import Career from '../assets/Screenshot/Career.png'
 import '../StyleSheets/Projects.css'
 import line from '../assets/Line-Design.svg'
 
@@ -14,41 +15,55 @@ function Projects() {
   const projects = [
     {
       id:1,
+      name:"CareerArcade",
+      image:Career,
+      github:"https://github.com/Shreyanshs1/CareerArcade",
+      demo:"https://careerarcade.vercel.app/"
+    },
+    {
+      id:2,
+      name:"Expense Tracker",
+      image:Expense,
+      github:"https://github.com/Shreyanshs1/ExpenseTracker",
+      demo:"https://expensetracker-eta-fawn.vercel.app/login"
+    },
+    {
+      id:3,
       name:"Sorting Visualizer",
       image:Visualizer,
       github:"https://github.com/Shreyanshs1/Sorting-Visualizer.git",
       demo:"https://shreyanshs1.github.io/Sorting-Visualizer/"
     },
     {
-      id:2,
+      id:4,
       name:"Full Stack Todo",
       image:Todo,
       github:"https://github.com/Shreyanshs1/todo.git",
       demo:null
     },
     {
-      id:3,
+      id:5,
       name:"Dictionary",
       image:Dictionary,
       github:"https://github.com/Shreyanshs1/Dictionary",
       demo:"https://shreyanshs1.github.io/Dictionary/"
     }
     ,{
-      id:4,
+      id:6,
       name:"Currency Converter",
       image:Currency,
       github:"https://github.com/Shreyanshs1/Currency-Converter",
       demo:"https://shreyanshs1.github.io/Currency-Converter/"
     },
     {
-      id:5,
+      id:7,
       name:"Weather App",
       image:Weather,
       github:"https://github.com/Shreyanshs1/react-weather-app/tree/main",
       demo:null
     },
     {
-      id:6,
+      id:8,
       name:"React Calculator",
       image:Calculator,
       github:"https://replit.com/@Shreyansh1807/React-Calculator",
