@@ -41,7 +41,7 @@
     border-radius: 15px;
     font-family: "Quicksand", serif;
     font-size: 15px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(255, 255, 255, 0.453);
 }
 
 .lbl-nd-inpt input:focus, textarea:focus{
