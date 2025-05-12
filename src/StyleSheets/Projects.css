@@ -34,6 +34,7 @@
     width: 90%;
     margin-top: 15px;
     border-radius: 15px;
+    position: relative;
 }
 
 .project-img{
@@ -43,8 +44,55 @@
     transition: 1s ease;
 }
 
-.project-img:hover{
-    scale: 1.2;
+.project-img-cont:hover .project-img {
+  transform: scale(1.2);
+}
+
+/* Overlay entering from left with skew */
+.project-overlay-left {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  width: 65%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.4s ease;
+  z-index: 2;
+  pointer-events: none; /* So image links remain clickable */
+}
+
+/* Un-skew inner content */
+.project-overlay-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+/* Show on hover */
+.project-img-cont:hover .project-overlay-left {
+  left: -10%;
+}
+
+.tech-stack-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.tech-stack-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .project-title-wrap{
