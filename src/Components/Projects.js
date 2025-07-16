@@ -8,6 +8,7 @@ import Weather from '../assets/Screenshot/weather.jpeg'
 import Calculator from '../assets/Screenshot/reactCalc.jpeg'
 import Expense from '../assets/Screenshot/expense.jpeg'
 import Career from '../assets/Screenshot/Career.png'
+import SoftSell from '../assets/Screenshot/softsell.png'
 import '../StyleSheets/Projects.css'
 import line from '../assets/Line-Design.svg'
 
@@ -76,6 +77,14 @@ function Projects() {
       github:"https://replit.com/@Shreyansh1807/React-Calculator",
       demo:null,
       techStack: ["React"]
+    },
+    {
+      id:9,
+      name:"SoftSell",
+      image:SoftSell,
+      github:"https://github.com/Shreyanshs1/softsell",
+      demo:"https://softsell-phi-three.vercel.app/",
+      techStack: ["HTML", "CSS", "JavaScript"]
     }
   ]
   return (
