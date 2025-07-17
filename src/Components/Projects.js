@@ -8,7 +8,7 @@ import Weather from '../assets/Screenshot/weather.jpeg'
 import Calculator from '../assets/Screenshot/reactCalc.jpeg'
 import Expense from '../assets/Screenshot/expense.jpeg'
 import Career from '../assets/Screenshot/Career.png'
-import SoftSell from '../assets/Screenshot/softsell.png'
+import SoftSell from '../assets/Screenshot/SoftSell.png'
 import '../StyleSheets/Projects.css'
 import line from '../assets/Line-Design.svg'
 
