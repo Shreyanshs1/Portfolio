@@ -39,8 +39,8 @@ function About() {
           <div className='right-about'>
             <div className='about-cards'>
               <AboutCard logo={Experience} heading="Experience" details="Fresher" />
-              <AboutCard logo={Work} heading="Completed" details="8+ Projects" />
-              <AboutCard logo={Github} heading="Github" details="9 Repos" />
+              <AboutCard logo={Work} heading="Completed" details="9+ Projects" />
+              <AboutCard logo={Github} heading="Github" details="13 Repos" />
             </div>
             <div className='my-intro-about'>
               <motion.p

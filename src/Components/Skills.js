@@ -5,7 +5,7 @@ import line from '../assets/Line-Design.svg'
 
 function Skills() {
   let frontendList=["HTML","CSS","Reactjs"];
-  let backendList =["Nodejs","Express.js","Restful API","ASP.NET Web API"];
+  let backendList =["Nodejs","Express.js","Restful API","ASP.NET"];
   let languages = ["C/C++","C#","Java","JavaScript"];
   let databases = ["MongoDB","MySQL","SQL Server"];
 
