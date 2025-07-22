@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../StyleSheets/Hero.css'
 import image from '../assets/avatar.png'
 import github from '../assets/Logos/github.svg'
@@ -7,8 +7,22 @@ import twitter from '../assets/Logos/twitter.svg'
 import line from '../assets/Line-Design.svg'
 import linkedin from '../assets/Logos/linkedin.svg'
 import { motion } from 'framer-motion';
+import { annotate } from 'rough-notation';
 
 function Hero() {
+  const ref1 = useRef();
+  const ref2 = useRef();
+
+  useEffect(() => {
+    const a1 = annotate(ref1.current, { type: 'highlight', color: '#FFD54F', animationDuration: 1000, });
+    const a2 = annotate(ref2.current, { type: 'box', color: '#f472b6', animationDuration: 1000, });
+
+    a1.show();
+    const timer = setTimeout(() => {
+      a2.show();
+    }, 900);
+    return () => clearTimeout(timer); 
+  }, []);
   return (
     <>
       <div className='container' id='home'>
@@ -16,7 +30,7 @@ function Hero() {
           <div className='left'>
             <p className='heading'>Shreyansh Srivastava👋</p>
             <p className='subheading'>Software Engineer</p>
-            <p className='description'>I'm a full-stack developer based in Lucknow, India, deeply passionate about what I do.<br/>
+            <p className='description'>I'm a <span ref={ref1}>full-stack developer</span> based in <span ref={ref2}>Lucknow, India</span>, deeply passionate about what I do.<br/>
             Email: shreyanshsri1807@gmail.com
             </p>
             <div className='socials'>
