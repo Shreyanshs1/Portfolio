@@ -14,14 +14,19 @@ function Hero() {
   const ref2 = useRef();
 
   useEffect(() => {
-    const a1 = annotate(ref1.current, { type: 'highlight', color: '#FFD54F', animationDuration: 1000, });
-    const a2 = annotate(ref2.current, { type: 'box', color: '#f472b6', animationDuration: 1000, });
+    const handleLoad = () => {
+      const a1 = annotate(ref1.current, { type: 'highlight', color: '#FFD54F', animationDuration: 1000 });
+      const a2 = annotate(ref2.current, { type: 'box', color: '#f472b6', animationDuration: 1000 });
 
-    a1.show();
-    const timer = setTimeout(() => {
-      a2.show();
-    }, 900);
-    return () => clearTimeout(timer); 
+      a1.show();
+      setTimeout(() => a2.show(), 900);
+    };
+
+    // Attach on load
+    window.addEventListener('load', handleLoad);
+
+    // Clean up
+    return () => window.removeEventListener('load', handleLoad); 
   }, []);
   return (
     <>
@@ -40,7 +45,7 @@ function Hero() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}
-                href='https://www.linkedin.com/in/shreyansh-srivastava-09b604226/' className='linkedin-btn'>
+                href='https://www.linkedin.com/in/shreyansh-srivastava-09b604226/' className='linkedin-btn' target='_blank'>
                 Connect
                 <img src={linkedin} className='linkedin-logo' />
               </motion.a>
