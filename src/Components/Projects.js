@@ -9,11 +9,20 @@ import Calculator from '../assets/Screenshot/reactCalc.jpeg'
 import Expense from '../assets/Screenshot/expense.jpeg'
 import Career from '../assets/Screenshot/Career.png'
 import SoftSell from '../assets/Screenshot/SoftSell.png'
+import Discord from '../assets/Screenshot/Discord.jfif'
 import '../StyleSheets/Projects.css'
 import line from '../assets/Line-Design.svg'
 
 function Projects() {
   const projects = [
+    {
+      id:0,
+      name:"WalkieTalkie(Discord)",
+      image:Discord,
+      github:"https://github.com/Shreyanshs1/Discord",
+      demo:null,
+      techStack: ["C#", "WPF", "XAML","Socket"]
+    },
     {
       id:1,
       name:"CareerArcade",
