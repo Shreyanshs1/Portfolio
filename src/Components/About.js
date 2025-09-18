@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import avatar from '../assets/avatar2.png'
 import '../StyleSheets/About.css'
 import AboutCard from '../Cards/AboutCard'
 import Work from '../assets/Logos/work.svg'
 import Experience from '../assets/Logos/experience.svg'
 import Github from '../assets/Logos/github.svg'
-import Resume from '../assets/resume.docx'
+import Resume from '../assets/resume.pdf'
 import File from '../assets/Logos/file.svg'
 import line from '../assets/Line-Design.svg'
 import { motion } from 'framer-motion';
 
 function About() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <div className='container-about' id='about'>
@@ -53,8 +55,11 @@ function About() {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.8 }}
-              href={Resume} download className='about-resume-btn'>
-              Download CV
+              href="#"
+              className='about-resume-btn'
+              onClick={(e) => { e.preventDefault(); setShowModal(true); }}
+            >
+              View CV
               <img src={File} className='dwnld-file-logo' />
             </motion.a>
           </div>
@@ -63,6 +68,20 @@ function About() {
           <img src={line} />
         </div>
       </div>
+      {showModal && (
+        <div className="resume-modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="resume-modal" onClick={e => e.stopPropagation()}>
+            <button className="close-modal-btn" onClick={() => setShowModal(false)}>×</button>
+            <iframe
+              src={Resume}
+              title="Resume"
+              width="100%"
+              height="100%"
+              style={{ border: 'none', borderRadius: '10px' }}
+            />
+          </div>
+        </div>
+      )}
     </>
   )
 }
