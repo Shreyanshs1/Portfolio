@@ -14,7 +14,7 @@
 
 
 .project-wrap{
-    height: 250px;
+    height: 280px;
     width: 340px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 30px;
@@ -164,6 +164,60 @@
 .projects-tab-btn:hover:not(.active) {
   background: rgba(0,0,0,0.04);
   color: var(--tertiary);
+}
+
+/* Tech tags row styling */
+.tech-tags-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  margin: 10px 0 0 18px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+/* Tech tag base style */
+.tech-tag {
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 3px 10px;
+  border-radius: 14px;
+  color: #222;
+  background: rgba(0,0,0,0.06);
+  white-space: nowrap;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+/* Different color backgrounds for tags */
+.tech-blue {
+  background: rgba(0, 123, 255, 0.18);
+  color: #1769aa;
+}
+.tech-pink {
+  background: rgba(255, 99, 132, 0.18);
+  color: #c2185b;
+}
+.tech-yellow {
+  background: rgba(255, 221, 51, 0.18);
+  color: #b8860b;
+}
+.tech-green {
+  background: rgba(40, 167, 69, 0.18);
+  color: #218838;
+}
+.tech-purple {
+  background: rgba(156, 39, 176, 0.18);
+  color: #6a1b9a;
+}
+.tech-orange {
+  background: rgba(255, 159, 64, 0.18);
+  color: #e65100;
 }
 
 @media (max-width: 900px) {

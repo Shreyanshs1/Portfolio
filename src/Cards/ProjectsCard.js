@@ -3,6 +3,10 @@ import Arrow from '../assets/Logos/arrow.svg'
 import { motion } from 'framer-motion';
 import ReactGA from 'react-ga4';
 
+const techColors = [
+  'tech-blue', 'tech-pink', 'tech-yellow', 'tech-green', 'tech-purple', 'tech-orange'
+];
+
 function ProjectsCard({ project }) {
   const handleGitHubClick = () => {
     ReactGA.event({
@@ -19,6 +23,7 @@ function ProjectsCard({ project }) {
       label: `${project.name} - Demo` // e.g., "My Awesome App - Demo"
     });
   };
+
   return (
     <>
       <motion.div
@@ -37,14 +42,18 @@ function ProjectsCard({ project }) {
         <div className='project-img-wrap'>
           <div className='project-img-cont'>
             <img className='project-img' src={project.image} />
-            <div className='project-overlay-left'>
-              <ul className='tech-stack-list'>
-                {project.techStack.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
-              </ul>
-            </div>
           </div>
+        </div>
+        <div className='tech-tags-row'>
+          {project.techStack.map((tech, idx) => (
+            <span
+              key={idx}
+              className={`tech-tag ${techColors[idx % techColors.length]}`}
+              title={tech}
+            >
+              {tech.length > 14 ? tech.slice(0, 12) + '…' : tech}
+            </span>
+          ))}
         </div>
         <div className='project-title-wrap'>
           <p className='project-title'>{project.name}</p>
