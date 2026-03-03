@@ -7,23 +7,29 @@ function Qualification() {
 const qualificationObject = [
   {
     id:1,
+    degree:"MCA",
+    year:"2025-2027",
+    college:"IGNOU"
+  },
+  {
+    id:2,
     degree:"BCA",
     year:"2022-2025",
     college:"IGNOU"
   },
   {
-    id:2,
+    id:3,
     degree:"Diploma",
     year:"2020-2023",
     college:"BTEUP"
   },
   {
-    id:3,
+    id:4,
     degree:"Intermediate",
     year:"2019-2020",
     college:"CBSE"
   },{
-    id:4,
+    id:5,
     degree:"High School",
     year:"2017-2018",
     college:"CBSE"
