@@ -4,10 +4,12 @@ import SkillsCard from '../Cards/SkillsCard'
 import line from '../assets/Line-Design.svg'
 
 function Skills() {
-  let frontendList=["HTML","CSS","Reactjs"];
-  let backendList =["Nodejs","Express.js","Restful API","ASP.NET"];
+  let frontendList=["HTML","CSS","Reactjs","Svelte","Next.js","Tailwind CSS"];
+  let backendList =["Nodejs","Express.js","Restful API","ASP.NET","JWT","Prisma ORM","Mongoose"];
   let languages = ["C/C++","C#","Java","JavaScript"];
-  let databases = ["MongoDB","MySQL","SQL Server"];
+  let databases = ["MongoDB","MySQL","SQL Server", "NeonDB","PostgreSQL","Supabase"];
+  let other = ["Git","Docker","AWS","GitHub","Postman","Cron Jobs"];
+  let skills = ["Full-Stack","REST","Auth","RBAC","MVC"]
 
   return (
     <>
@@ -19,6 +21,8 @@ function Skills() {
       <SkillsCard heading="Backend" list={backendList} slideDirection="right"/>
       <SkillsCard heading="Languages" list={languages} slideDirection="left"/>
       <SkillsCard heading="Databases" list={databases} slideDirection="right"/>
+      <SkillsCard heading="Other" list={other} slideDirection="left"/>
+      <SkillsCard heading="Skills" list={skills} slideDirection="right"/>
       </div>
       <div className='line-design'>
         <img src={line}/>
