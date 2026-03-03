@@ -1,4 +1,12 @@
+::selection {
+  color: #EBE2E0;
+  background: #1F1F1F;
+}
 
+::-moz-selection {
+  color: #EBE2E0;
+  background: #1F1F1F;
+}
 
 *{
     margin: 0;
